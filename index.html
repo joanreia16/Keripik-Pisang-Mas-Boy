@@ -4,201 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Keripik Pisang Mas Boy</title>
-  <style>
-    :root {
-      --bg: #fffbe6;
-      --text: #333;
-      --card: #f4f4f4;
-    }
-
-    body.dark {
-      --bg: #121212;
-      --text: #f4f4f4;
-      --card: #1e1e1e;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: var(--bg);
-      color: var(--text);
-      transition: background-color 0.3s, color 0.3s;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    header {
-      background-color: #ffd54f;
-      text-align: center;
-      padding: 2em 1em;
-      border-bottom: 4px solid #ffca28;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.2em;
-    }
-
-    header p {
-      margin-top: 0.5em;
-      font-size: 1.1em;
-      font-style: italic;
-    }
-
-    .theme-toggle {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: #4caf50;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    section {
-      margin-top: 2.5em;
-    }
-
-    h2 {
-      font-size: 1.5em;
-      margin-bottom: 0.5em;
-      color: inherit;
-    }
-
-    .intro p {
-      font-size: 1.05em;
-      margin-bottom: 1em;
-    }
-
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1em;
-      justify-content: center;
-    }
-
-    .grid div {
-      flex: 1 1 250px;
-      max-width: 250px;
-      text-align: center;
-    }
-
-    .grid img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .grid p {
-      margin-top: 0.5em;
-      font-weight: bold;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 1em 2em;
-      background-color: #4caf50;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-
-    .btn:hover {
-      background-color: #388e3c;
-    }
-
-    .pesan, .form-order {
-      text-align: center;
-    }
-
-    .promo, .tentang, .sosmed, .form-order form {
-      background-color: var(--card);
-      padding: 1em;
-      border-radius: 10px;
-      margin-bottom: 1em;
-    }
-
-    .sosmed a {
-      margin-right: 10px;
-      text-decoration: none;
-      color: #1565c0;
-      font-weight: bold;
-    }
-
-    .faq p {
-      margin-bottom: 1em;
-    }
-
-    footer {
-      margin-top: 3em;
-      padding: 1em;
-      background-color: #eee;
-      text-align: center;
-      font-size: 0.9em;
-    }
-
-    .slider {
-      position: relative;
-      height: 100px;
-      overflow: hidden;
-    }
-
-    .slide {
-      position: absolute;
-      opacity: 0;
-      animation: fade 12s infinite;
-      width: 100%;
-    }
-
-    .slide:nth-child(1) { animation-delay: 0s; }
-    .slide:nth-child(2) { animation-delay: 4s; }
-    .slide:nth-child(3) { animation-delay: 8s; }
-
-    @keyframes fade {
-      0%, 100% { opacity: 0; }
-      10%, 30% { opacity: 1; }
-    }
-
-    input, textarea {
-      width: 90%;
-      padding: 0.5em;
-      margin-bottom: 1em;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-
-    button[type="submit"] {
-      background-color: #4caf50;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    @media screen and (max-width: 600px) {
-      .grid {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .theme-toggle {
-        top: 10px;
-        right: 10px;
-        padding: 8px 12px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <button class="theme-toggle" onclick="toggleTheme()">🌙/☀️</button>
@@ -211,9 +17,8 @@
 
     <section class="intro">
       <p>
-        Keripik Pisang Mas Boy adalah usaha camilan rumahan dengan cita rasa kekinian.
+        Keripik Pisang Mas Boy adalah usaha camilan rumahan yang menyajikan keripik pisang renyah dengan cita rasa kekinian.
         Varian: <strong>Matcha</strong>, <strong>Tiramisu</strong>, dan <strong>Coklat</strong>.
-        Dibuat tanpa bahan pengawet, cocok untuk camilan harian.
       </p>
       <p><strong>Harga per pack: Rp 15.000,-</strong></p>
     </section>
@@ -249,7 +54,7 @@
 
     <section class="tentang">
       <h2>👨‍🍳 Tentang Mas Boy</h2>
-      <p>Mas Boy memulai usaha camilan pisang ini dari rumah kecil di Jogja dengan resep turun-temurun dan inovasi rasa modern. Kini tersedia dalam berbagai rasa favorit anak muda.</p>
+      <p>Mas Boy memulai usaha camilan pisang ini dari rumah kecil di Jogja dengan resep turun-temurun dan inovasi rasa modern.</p>
     </section>
 
     <section class="sosmed">
@@ -260,10 +65,10 @@
 
     <section class="form-order">
       <h2>📝 Formulir Order</h2>
-      <form action="mailto:keripikmasboy@example.com" method="POST" enctype="text/plain">
+      <form action="mailto:keripikmasboy@gmail.com" method="POST" enctype="text/plain">
         <input type="text" name="Nama" placeholder="Nama Anda" required><br>
         <input type="email" name="Email" placeholder="Email Anda" required><br>
-        <textarea name="Pesanan" rows="4" placeholder="Saya ingin pesan 2 Coklat, 1 Matcha..." required></textarea><br>
+        <textarea name="Pesanan" rows="4" placeholder="Contoh: 2 Matcha, 1 Coklat" required></textarea><br>
         <button type="submit">Kirim Pesanan</button>
       </form>
     </section>
