@@ -17,6 +17,14 @@ body {
   background-color: var(--bg);
   color: var(--text);
   transition: background-color 0.3s, color 0.3s;
+  background-image: url('images/bg-pisang.png');
+  background-repeat: repeat;
+  background-size: 80px;
+  background-attachment: fixed;
+}
+
+body.dark {
+  background-image: url('images/bg-pisang-dark.png');
 }
 
 .container {
@@ -157,7 +165,7 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-/* ✅ FIXED SLIDER TESTIMONI */
+/* ✅ SLIDER TESTIMONI */
 .slider {
   position: relative;
   height: 80px;
@@ -195,7 +203,7 @@ button[type="submit"] {
   40% { opacity: 0; z-index: 0; }
 }
 
-/* RESPONSIVE */
+/* 📱 RESPONSIVE */
 @media screen and (max-width: 600px) {
   .grid {
     flex-direction: column;
