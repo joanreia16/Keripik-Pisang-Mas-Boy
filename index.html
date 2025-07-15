@@ -8,18 +8,7 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Keripik Pisang Mas Boy</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
       padding: 0;
-      line-height: 1.6;
       background-color: #fffbe6;
       color: #333;
     }
@@ -33,22 +22,46 @@
     header {
       background-color: #ffd54f;
       text-align: center;
-      padding: 2em;
+      padding: 2em 1em;
+      border-bottom: 4px solid #ffca28;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2em;
+      font-size: 2.2em;
     }
 
-    .intro, .produk, .pesan {
-      margin-top: 2em;
+    header p {
+      margin-top: 0.5em;
+      font-size: 1.1em;
+      font-style: italic;
+    }
+
+    section {
+      margin-top: 2.5em;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+      color: #444;
+    }
+
+    .intro p {
+      font-size: 1.05em;
+      margin-bottom: 1em;
     }
 
     .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
       gap: 1em;
+      justify-content: center;
+    }
+
+    .grid div {
+      flex: 1 1 250px;
+      max-width: 250px;
       text-align: center;
     }
 
@@ -56,6 +69,12 @@
       width: 100%;
       height: auto;
       border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid p {
+      margin-top: 0.5em;
+      font-weight: bold;
     }
 
     .btn {
@@ -66,19 +85,60 @@
       text-decoration: none;
       border-radius: 10px;
       font-weight: bold;
-      margin-top: 1em;
+      transition: background-color 0.3s;
     }
 
     .btn:hover {
       background-color: #388e3c;
     }
 
+    .pesan {
+      text-align: center;
+    }
+
+    .testimoni blockquote {
+      background: #fff3cd;
+      border-left: 5px solid #ffc107;
+      padding: 1em;
+      margin: 1em 0;
+      border-radius: 8px;
+      font-style: italic;
+    }
+
+    .faq p {
+      margin-bottom: 1em;
+    }
+
+    .promo, .tentang, .sosmed {
+      background-color: #f4f4f4;
+      padding: 1em;
+      border-radius: 10px;
+    }
+
+    .sosmed a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #1565c0;
+      font-weight: bold;
+    }
+
     footer {
+      margin-top: 3em;
+      padding: 1em;
       background-color: #eee;
       text-align: center;
-      padding: 1em;
       font-size: 0.9em;
-      margin-top: 3em;
+    }
+
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 1.6em;
+      }
+
+      .grid {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -102,11 +162,38 @@
     <section class="produk">
       <h2>📸 Varian Rasa</h2>
       <div class="grid">
-        <div class="grid">
-  <div><img src="images/coklat.jpeg" alt="Coklat"><p>Coklat</p></div>
-  <div><img src="images/matcha.jpeg" alt="Matcha"><p>Matcha</p></div>
-  <div><img src="images/tiramisu.jpeg" alt="Tiramisu"><p>Tiramisu</p></div>
+        <div><img src="images/coklat.jpeg" alt="Coklat"><p>Coklat</p></div>
+        <div><img src="images/matcha.jpeg" alt="Matcha"><p>Matcha</p></div>
+        <div><img src="images/tiramisu.jpeg" alt="Tiramisu"><p>Tiramisu</p></div>
       </div>
+    </section>
+
+    <section class="promo">
+      <h2>🎉 Promo Bulan Ini</h2>
+      <p>Beli 5 gratis 1! Promo berlaku hingga 31 Juli 2025.</p>
+    </section>
+
+    <section class="testimoni">
+      <h2>🗣️ Testimoni Pelanggan</h2>
+      <blockquote>"Rasanya enak banget! Favoritku yang coklat!" – Rina</blockquote>
+      <blockquote>"Matcha-nya unik dan renyah, beda dari keripik biasa!" – Dedi</blockquote>
+    </section>
+
+    <section class="faq">
+      <h2>❓ Tanya Jawab</h2>
+      <p><strong>Q:</strong> Apakah bisa dikirim ke luar kota?<br><strong>A:</strong> Ya, kami kirim via J&T / JNE ke seluruh Indonesia.</p>
+      <p><strong>Q:</strong> Berapa lama masa simpannya?<br><strong>A:</strong> 2 bulan dalam wadah tertutup.</p>
+    </section>
+
+    <section class="tentang">
+      <h2>👨‍🍳 Tentang Mas Boy</h2>
+      <p>Mas Boy memulai usaha camilan pisang ini dari rumah kecil di Jogja dengan resep turun-temurun dan inovasi rasa modern. Kini tersedia dalam berbagai rasa favorit anak muda.</p>
+    </section>
+
+    <section class="sosmed">
+      <h2>🔗 Temukan Kami</h2>
+      <a href="https://instagram.com/keripikmasboy" target="_blank">📸 Instagram</a>
+      <a href="https://shopee.co.id/keripikmasboy" target="_blank">🛒 Shopee</a>
     </section>
 
     <section class="pesan">
@@ -121,64 +208,3 @@
   </div>
 </body>
 </html>
-
-      line-height: 1.6;
-      background-color: #fffbe6;
-      color: #333;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    header {
-      background-color: #ffd54f;
-      text-align: center;
-      padding: 2em;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-
-    .intro, .produk, .pesan {
-      margin-top: 2em;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 1em;
-      text-align: center;
-    }
-
-    .grid img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 1em 2em;
-      background-color: #4caf50;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      margin-top: 1em;
-    }
-
-    .btn:hover {
-      background-color: #388e3c;
-    }
-
-    footer {
-      background-color: #eee;
-      text-align: center;
-      padding: 1em;
-      font-size: 0.9em;
-      margin-
