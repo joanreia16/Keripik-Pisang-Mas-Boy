@@ -1,43 +1,45 @@
-import streamlit as st
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keripik Pisang Mas Boy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-st.set_page_config(page_title="Keripik Pisang Mas Boy", page_icon="🍌", layout="centered")
+  <header>
+    <h1>🍌 Keripik Pisang Mas Boy</h1>
+    <p>Renyahnya bikin nagih, rasanya beda dari yang lain!</p>
+  </header>
 
-# --- Header ---
-st.title("🍌 Keripik Pisang Mas Boy")
-st.subheader("Renyahnya Bikin Nagih, Rasanya Beda dari yang Lain!")
-st.write("""
-Keripik Pisang Mas Boy adalah usaha camilan rumahan yang menyajikan keripik pisang renyah dengan cita rasa kekinian.
+  <section class="intro">
+    <p>
+      Keripik Pisang Mas Boy adalah usaha camilan rumahan yang menyajikan keripik pisang renyah dengan cita rasa kekinian.
+      Tersedia dalam tiga varian rasa favorit: <strong>Matcha</strong>, <strong>Tiramisu</strong>, dan <strong>Coklat</strong>.
+      Dibuat dari pisang pilihan dan diolah secara higienis tanpa bahan pengawet.
+    </p>
+    <p><strong>Harga per pack: Rp 15.000,-</strong></p>
+  </section>
 
-Tersedia dalam tiga varian rasa favorit: **Matcha**, **Tiramisu**, dan **Coklat**.
+  <section class="produk">
+    <h2>📸 Varian Rasa</h2>
+    <div class="grid">
+      <div><img src="images/coklat.jpg" alt="Coklat"><p>Coklat</p></div>
+      <div><img src="images/matcha.jpg" alt="Matcha"><p>Matcha</p></div>
+      <div><img src="images/tiramisu.jpg" alt="Tiramisu"><p>Tiramisu</p></div>
+      <div><img src="images/paket.jpg" alt="Semua Varian"><p>Paket Lengkap</p></div>
+    </div>
+  </section>
 
-Keripik Pisang Mas Boy dibuat dari pisang pilihan dan diolah secara higienis tanpa bahan pengawet.
-Cocok untuk teman santai, oleh-oleh, atau camilan harian.
-""")
+  <section class="pesan">
+    <h2>📲 Pesan Sekarang</h2>
+    <a href="https://wa.me/6282231305330?text=Halo%2C%20saya%20ingin%20pesan%20Keripik%20Pisang%20Mas%20Boy%20ya.%20Tolong%20infonya." target="_blank" class="btn">💬 Pesan via WhatsApp</a>
+  </section>
 
-# --- Harga ---
-st.success("📦 Harga per pack hanya Rp 15.000,-")
+  <footer>
+    <p>&copy; 2025 Mas Boy | IG: @keripikmasboy</p>
+  </footer>
 
-# --- Gambar Produk ---
-st.header("📸 Varian Rasa")
-
-col1, col2 = st.columns(2)
-
-with col1:
-    st.image("images/coklat.jpg", caption="Coklat", use_column_width=True)
-    st.image("images/matcha.jpg", caption="Matcha", use_column_width=True)
-
-with col2:
-    st.image("images/tiramisu.jpg", caption="Tiramisu", use_column_width=True)
-    st.image("images/paket.jpg", caption="Paket Keripik Pisang Mas Boy", use_column_width=True)
-
-# --- Tombol Pemesanan ---
-st.markdown("### 📲 Pesan Sekarang")
-st.markdown("""
-Klik tombol di bawah untuk memesan langsung via WhatsApp:
-
-[💬 Pesan via WhatsApp](https://wa.me/6282231305330?text=Halo%2C%20saya%20ingin%20pesan%20Keripik%20Pisang%20Mas%20Boy%20ya.%20Tolong%20infonya.%20Terima%20kasih!)  
-""")
-
-# --- Footer ---
-st.markdown("---")
-st.caption("Usaha rumahan oleh Mas Boy 🍌 | Instagram: @keripikmasboy (jika ada)")
+</body>
+</html>
